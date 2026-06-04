@@ -63,35 +63,35 @@ co.eci.snake
    
         Cada t milisegundos (TMILISECONDS = 5000), el hilo Control cambia la bandera pause = true y llama a pauseThreads().
 
-        ![alt text](resources/Imagen1.png)
+        ![alt text](PrimeFinder/resources/Imagen1.png)
 
         Los hilos PrimeFinderThread, al ejecutar checkPause() en cada iteración, entran en espera:
 
-        ![alt text](resources/Imagen2.png)
+        ![alt text](PrimeFinder/resources/Imagen2.png)
 
         Código desde Control.run():
 
-        ![alt text](resources/Imagen3.png)
+        ![alt text](PrimeFinder/resources/Imagen3.png)
 
    - Se **muestre** cuántos números primos se han encontrado.
 
         Después de pausar los hilos, se calcula la suma de primos encontrados por cada hilo:
 
-        ![alt text](resources/Imagen4.png)
+        ![alt text](PrimeFinder/resources/Imagen4.png)
 
         En Control.run(), luego de la pausa:
 
-        ![alt text](resources/Imagen5.png)
+        ![alt text](PrimeFinder/resources/Imagen5.png)
 
    - El programa **espere ENTER** para **reanudar**.
 
         Tras mostrar el conteo, se espera a que el usuario presione ENTER y luego se reanudan los hilos:
 
-        ![alt text](resources/Imagen6.png)
+        ![alt text](PrimeFinder/resources/Imagen6.png)
 
         resumeThreads() cambia la bandera y despierta a todos los hilos que están en wait():
 
-        ![alt text](resources/Imagen7.png)
+        ![alt text](PrimeFinder/resources/Imagen7.png)
 
 3. `La sincronización debe usar synchronized, wait(), notify() / notifyAll() sobre el mismo monitor (sin _busy-waiting_).`
 
@@ -129,8 +129,8 @@ co.eci.snake
 
 5. `Prueba Fotografica`
 
-    ![alt text](resources/Captura1.png)
+    ![alt text](PrimeFinder/resources/Captura1.png)
 
-    ![alt text](resources/Captura2.png)
+    ![alt text](PrimeFinder/resources/Captura2.png)
 
 
