@@ -1,4 +1,5 @@
 # Compiled class file
+target/
 *.class
 
 # Log file
@@ -22,3 +23,17 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Configuración de GitHub (opcional, si no la quieres subir)
+.github/
+
+# IDE
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
